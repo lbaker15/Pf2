@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pf2/static/css/main.6a3aa7df.css",
+    "main.js": "/pf2/static/js/main.f6ec0f05.js",
+    "static/js/787.375a7d81.chunk.js": "/pf2/static/js/787.375a7d81.chunk.js",
+    "static/media/site.webm": "/pf2/static/media/site.4f4d0baf7578adb80600.webm",
+    "static/media/kaleidoscope.webm": "/pf2/static/media/kaleidoscope.a317b0e11236d2d2e32b.webm",
+    "static/media/contactform.webm": "/pf2/static/media/contactform.3b54abf138ee53148ee5.webm",
+    "static/media/canvas.webm": "/pf2/static/media/canvas.a6f0bb20405c86e8c00d.webm",
+    "static/media/ripple.webm": "/pf2/static/media/ripple.7a781a3edda0be6dd26c.webm",
+    "static/media/webgl.webm": "/pf2/static/media/webgl.8f72efc58321d1579307.webm",
+    "static/media/Ogg-Roman.otf": "/pf2/static/media/Ogg-Roman.4d8ddd1b37cfae273847.otf",
+    "static/media/logo.svg": "/pf2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pf2/index.html",
+    "main.6a3aa7df.css.map": "/pf2/static/css/main.6a3aa7df.css.map",
+    "main.f6ec0f05.js.map": "/pf2/static/js/main.f6ec0f05.js.map",
+    "787.375a7d81.chunk.js.map": "/pf2/static/js/787.375a7d81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a3aa7df.css",
+    "static/js/main.f6ec0f05.js"
+  ]
+}
