@@ -33,7 +33,7 @@ class AppGrid extends React.Component {
     render() {
         return (
             <React.Fragment>    
-                <div class="mx-10 flex items-center my-10">
+                <div class="mx-10 flex items-center my-10 apps">
                     <div class="bg-card bg-gray-200 w-full p-10">                
                         <div class="w-full">
                             <h1 class="heading-1">Apps I have worked on</h1>

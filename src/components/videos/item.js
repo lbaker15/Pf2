@@ -43,10 +43,7 @@ class Item extends React.Component {
         video.style.transform = `translate(${posX}px, ${posY}px)`
     }
     handleClick = () => {
-        this.setState({
-            redirect: true,
-            redirectLink: this.props.link
-        })
+        window.location = this.props.link;
     }
 
     componentDidMount() {
@@ -75,10 +72,12 @@ class Item extends React.Component {
         const {hidden, redirect} = this.state;
         return (
             <React.Fragment>
-                {redirect ? <Redirect /> : null}
+                {/* {redirect ? <Redirect to={this.state.redirectLink} /> : null} */}
                 <div 
                 ref={this.ref}
-                onClick={this.handleClick} class="flex flex-col justify-center items-center text-style-vids" onMouseEnter={this.handleHover} onMouseLeave={this.handleMouseLeave} onMouseMove={this.handleMouseMove} index="1">
+                onClick={this.handleClick} 
+                
+                class="flex flex-col justify-center items-center text-style-vids" onMouseEnter={this.handleHover} onMouseLeave={this.handleMouseLeave} onMouseMove={this.handleMouseMove} index="1">
                     <a className="pointer-none" href={link}>{text}</a>
                     <video ref={this.reference} style={hidden ? {display: 'none'} : {display: 'block'}} className="pointer-none" id="video" width="320" height="240" src={video}>
                         Your browser does not support the video tag.

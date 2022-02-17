@@ -8,15 +8,15 @@ class SiteGrid extends React.Component {
     ref3 = React.createRef()
     ref4 = React.createRef()
     ref5 = React.createRef()
+    ref6 = React.createRef()
     componentDidMount() {
         gsap.registerPlugin(ScrollTrigger)
         console.log(this.ref.current.parentElement)
         let array = [
             this.ref.current, this.ref2.current, this.ref3.current,
-            this.ref4.current, this.ref5.current
+            this.ref4.current, this.ref5.current, this.ref6.current
         ]
         array.map(item => {
-            gsap.set(item, {opacity: 0, x:50})
             let tlOpacity = gsap.timeline({
                 scrollTrigger: {
                     trigger: item,
@@ -26,13 +26,13 @@ class SiteGrid extends React.Component {
                     // markers: true,
                 }
             });
-            tlOpacity.to(item, {opacity: 1,x:0})
+            tlOpacity.fromTo(item, {opacity: 0, x:50}, {opacity: 1,x:0})
         })
     }
     render() {
         return (
             <React.Fragment>    
-                <div class="mx-10 flex items-center my-10">
+                <div class="mx-10 flex items-center my-10 websites">
                     <div class="bg-card bg-gray-200 w-full p-10">                
                         <div class="w-full">
                             <h1 class="heading-1">Sites I have worked on</h1>
@@ -69,6 +69,17 @@ class SiteGrid extends React.Component {
                                         A custom theme developed from scratch for a small cosmetics company
                                         </h4>
                                     </div>
+                                    <div ref={this.ref6} class="py-4 ibm pr-4">
+                                        <h2 class="mb-2">
+                                        <a className="font-semibold" href="https://lbaker15.github.io/music-demo/#/home">
+                                        https://lbaker15.github.io/music-demo/#/home
+                                        </a>
+                                        </h2>
+                                        <h4 class="mb-4">
+                                        A demo of a music venue website developed using React, framer motion, GraphQL & Contentful API
+                                        </h4>
+                                    </div>
+
                                     <div ref={this.ref4} class="py-4 ibm pr-4">
                                         <h2 class="mb-2">
                                         <a className="font-semibold" href="https://abdivibes.bws.digital/">

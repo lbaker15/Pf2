@@ -8,7 +8,28 @@
   src: url('./fonts/Ogg-Roman.otf');
 }
 
+.nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}
+.nav .inner {
+  display: flex; gap: 20px;
+  font-family: Manrope;
+  font-size: 26px;
+}
+.nav .inner button {
+  border: none; background: transparent;
+}
 
+video {
+  pointer-events: none;
+}
 @media (max-width: 1000px) {
 .blob1css {
   margin-left: -70vw !important;
@@ -124,5 +145,28 @@
 @media (min-width: 1280px) {
   .intro-text {
     font-size: 9vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-style-vids {
+    min-width: 90%;
+  }
+  .grid a {
+    word-break: break-all;
+  }
+  .w-full h1 {
+    text-align: center;
+  }
+  .grid h2 {
+    text-align: center;
+  }
+  .grid h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .intro-text {
+    margin: 0vw 1.5rem;
   }
 }

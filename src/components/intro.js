@@ -25,7 +25,6 @@ class Intro extends React.Component {
 
     }
     mouseMove = (e) => {
-        console.log(e)
         let num = e.clientX / window.innerWidth * 100;
         let num2 = e.clientY / window.innerHeight * 100;
         num2 = 1 + (num2/50)
